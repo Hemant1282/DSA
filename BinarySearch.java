@@ -3,7 +3,7 @@ public class BinarySearch {
     public static int Binary_Search(int arr[], int target){
         int first = 0;
         int last = arr.length-1;
-        while(first < last){
+        while(first <= last){
             int mid = (first + last)/2;
             if(arr[mid] == target){
                 return mid;
