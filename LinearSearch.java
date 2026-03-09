@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javax.sound.sampled.Line;
-
 public class LinearSearch{
 
     public static int Linear_search(int arr[],int target){
