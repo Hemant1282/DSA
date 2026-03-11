@@ -43,9 +43,29 @@ public class Sorting {
 
         }
     }
+
+    //counting sort
+    public static void Count_Sort(int arr[]){
+        int largest = LargestInArr.Largest_In_Arr(arr);
+        int count[] = new int[largest+1];
+
+        for(int i = 0;i<arr.length;i++){
+            count[arr[i]]++;
+        }
+        int j = 0;
+        for(int i = 0;i<count.length;i++){
+            if(count[i]>0){
+                while(count[i]>0){
+                    arr[j] = i;
+                    count[i]--;
+                    j++;
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
         int arr[] = {9,8,7,6,5,4,3};
-        BubbleSort(arr);
+        Count_Sort(arr);
         for(int i = 0;i<arr.length;i++){
             System.out.print(arr[i]);
         }
