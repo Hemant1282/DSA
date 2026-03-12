@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class LargestInArr {
 
     public static int Largest_In_Arr(int arr[]){
