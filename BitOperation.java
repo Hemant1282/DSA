@@ -67,7 +67,7 @@ public class BitOperation {
     public static int remove_last_set_bit(int num){
         return num & (num - 1);
     }
-
+    
     public static void main(String[] args) {
         
     }
