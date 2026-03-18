@@ -1,13 +1,13 @@
 public class TillingProblem {
 
-    public static int TillingProblem(int n){
+    public static int Tilling_Problem(int n){
         //base case
         if(n == 1 || n == 2){
             return n;
         }
         //main logic
-        int verticalways = TillingProblem(n-1);
-        int horizontalways = TillingProblem(n-2);
+        int verticalways = Tilling_Problem(n-1);
+        int horizontalways = Tilling_Problem(n-2);
 
         return verticalways + horizontalways;
     }
