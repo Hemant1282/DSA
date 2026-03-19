@@ -47,9 +47,9 @@ public class RotatedSortedArr {
 
         if(arr[si] <= arr[mid]){
             if (arr[si] <= target && arr[mid] > target) {
-                Rotated_SortArr(arr, target, si, mid);
+                return Rotated_SortArr(arr, target, si, mid);
             } else {
-                Rotated_SortArr(arr, target, mid+1, ei);
+                return Rotated_SortArr(arr, target, mid+1, ei);
             }
         }
         else{
