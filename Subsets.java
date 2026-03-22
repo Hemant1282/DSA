@@ -7,8 +7,8 @@ public class Subsets {
             return;
         }
             //include
-            Find_Subsets(str, sb+(str.charAt(i)),i+1);
-            Find_Subsets(str, sb,i+1);
+        Find_Subsets(str, sb+(str.charAt(i)),i+1);
+        Find_Subsets(str, sb,i+1);
     }
     public static void main(String[] args) {
         Find_Subsets("abc", new String(), 0);
